@@ -4,6 +4,9 @@
 
 
 <head>
+  <link rel="manifest" href="manifest.json">
+  <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
   <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="59a55677-6396-4f1b-9cda-77f51b6f46c5";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
     <!-- Hotjar Tracking Code for https://helium-web.ga -->
 <script>
@@ -27,6 +30,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <link href="themes/prism.css" rel="stylesheet" />
   <!-- Include JQuery -->
   <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/hammerjs@2.0.3/hammer.min.js"></script>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.bundle.js"></script>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
@@ -125,65 +129,80 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <script src="https://kit.fontawesome.com/a2a9b0bc1d.js" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/@loadable/component@5.16.4/dist/loadable.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/styled-components@6.0.0-beta.5/dist/styled-components.browser.cjs.min.js"></script>
-<script>src="https://hammerjs.github.io/dist/hammer.min.js"</script>
-<script>src="https://hammerjs.github.io/dist/hammer.js"</script>
+<script src="https://cdn.jsdelivr.net/npm/hammerjs@2.0.3/hammer.min.js"></script>
 <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
 <script src="prism.js"></script>
+<script src="script2.js"></script>
 <style>
 
-.container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 20px;
-    }
+  /* Dark Style */
+body {
+  background-color: #222;
+  color: #fff;
+}
 
-    .header {
-      background-color: #333;
-      color: #fff;
-      padding: 10px;
-      text-align: center;
-    }
+.navbar {
+  background-color: #333;
+}
 
-    .sidebar {
-      background-color: #f2f2f2;
-      width: 20%;
-      float: left;
-      padding: 20px;
-    }
+.navbar-brand,
+.navbar-nav .nav-link {
+  color: #fff;
+}
 
-    .main-content {
-      background-color: #fff;
-      width: 80%;
-      float: right;
-      padding: 20px;
-    }
+.navbar-nav .nav-link:hover {
+  color: #ddd;
+}
 
-    .footer {
-      background-color: #333;
-      color: #fff;
-      padding: 10px;
-      text-align: center;
-      clear: both;
-    }
+.list-group-item {
+  background-color: #444;
+  color: #fff;
+}
 
 </style>
 
-<div class="container">
-  <div class="header">
-    <h1>Dashboard</h1>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Dashboard</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-3">
+        <!-- Sidebar -->
+        <ul class="list-group">
+          <li class="list-group-item">Menu Item 1</li>
+          <li class="list-group-item">Menu Item 2</li>
+          <li class="list-group-item">Menu Item 3</li>
+        </ul>
+      </div>
+      <div class="col-9">
+        <!-- Main content -->
+        <h1>Welcome to the Dashboard!</h1>
+        <!-- Add your dashboard content here -->
+      </div>
+    </div>
   </div>
-  <div class="sidebar">
-    <h2>Sidebar</h2>
-   
-  </div>
-</div>
-
-
-
-
-
-
 
 
 

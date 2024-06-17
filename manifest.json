@@ -1,0 +1,9 @@
+{
+    "name": "Helium Web",
+    "short_name": "HelWeb",
+    "start_url": ".",
+    "display": "standalone",
+    "theme_color": "#333",
+    "background_color": "#fff"
+ 
+  }
